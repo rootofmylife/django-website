@@ -1,0 +1,13 @@
+﻿{% extends 'biocom/base.html' %}
+
+{% block body %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %} 
+        <h1>Dynamic Programming: Global Alignment</h1>
+        <textarea name="test_1" rows="20" cols="20"></textarea>
+        <textarea name="test_2" rows="20" cols="20"></textarea>
+        <button name="submit">Submit</button>
+        <br />
+        <h1>Heuristic Alignment Algorithms</h1>
+    </form>
+{% endblock %}

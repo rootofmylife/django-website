@@ -1,0 +1,16 @@
+<html>
+<head><title></title></head>
+
+<body>
+    <ul>
+        {% for item in all_cat %}
+        <!--
+            <li><a href="/news/{{item.id}}/">{{item.genre}}</a></li>
+        -->
+        
+            <li><a href="{% url 'news:detail' item.id %}">{{item.genre}}</a></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

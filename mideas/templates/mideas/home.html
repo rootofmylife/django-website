@@ -1,0 +1,13 @@
+﻿<div style="padding:40px;margin:40px;border:1px solid #ccc">
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        {% csrf_token %} 
+        <label>Upload Files (key.txt and mess.txt)</label> <br />
+        <input type="file" name="files" multiple/>
+        <br />
+         <br />
+
+        <input type="submit" value="Upload" />
+    </form>
+
+</div>

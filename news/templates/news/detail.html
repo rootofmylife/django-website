@@ -1,0 +1,16 @@
+﻿<html>
+<head><title></title></head>
+
+<body>
+    <h2>{{ album.name }}</h2>
+    <h4>{{ album.genre }}</h4>
+    <h5>{{ album.date }}</h5>
+    </br> </hr>
+    <ul>
+        {% for item in album.news_set.all %}
+            <li>{{ item.headline }} </br> <p>{{ item.body }}</p></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
